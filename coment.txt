@@ -1,12 +1,20 @@
 1. Создали минимальную структуру папок.
 2. Устанавливаем npm i -D webpack webpack-cli
 
-webpack — сборщик модулей и ресурсов
-webpack-cli — интерфейс командной строки для вебпака
+    webpack — сборщик модулей и ресурсов
+    webpack-cli — интерфейс командной строки для webpack
 
-создали webpack.config.js
+    создали webpack.config.js
 
-запускаем для проверки npm run webpack
+    запускаем для проверки npm run webpack
 
 3. Устанавливаем npm i -D html-webpack-plugin
-плугин нужен для связывания html с js
+    плагин нужен для связывания html с js
+
+4. Устанавливаем npm i -D css-loader mini-css-extract-plugin
+
+    css-loader интерпретирует CSS, резолвит пути и т.д.
+
+    mini-css-extract-plugin
+    Этот плагин извлекает CSS в отдельные файлы. Он создает файл CSS для каждого файла JS, 
+    который содержит CSS. Он поддерживает загрузку по требованию CSS и SourceMaps.
