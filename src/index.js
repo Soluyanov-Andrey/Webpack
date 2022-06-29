@@ -1,2 +1,3 @@
-import "./styles.css"
+import "./style.scss"
+//import "./styles.css"
 let andrey = "andrey";

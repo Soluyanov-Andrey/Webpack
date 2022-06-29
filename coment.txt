@@ -35,3 +35,12 @@
        // и пришлось добавить {} в объявлении 
        // const {CleanWebpackPlugin} = require('clean-webpack-plugin');
        // все заработало
+
+6. Устанавливаем npm i -D sass-loader style-loader sass
+        // в предыдущей версии сборки стоял Node Sass его рекомендовали заменить на Dart Sass
+        // Dart Sass через npm ставится как модуль npm i sass
+        // style-loader установил как в старой сборке, но, по-моему, этот модуль не используется
+        // используется только sass-loader и sass
+        //, но, на всякий случай оставил style-loader
+
+
