@@ -1,6 +1,8 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+
 module.exports = {
     // development ,production
     mode: 'development',
@@ -10,6 +12,7 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist')
+        
     },
 
     module: {
@@ -29,6 +32,7 @@ module.exports = {
     },
 
     plugins: [
+        
         new HtmlWebpackPlugin(
             {
                 template: './src/index.html'
@@ -39,6 +43,18 @@ module.exports = {
             // both options are optional
             filename: '[name].css'
 
-        })
+        }),
+
+       // в предыдущей версии писал так
+       // с этим модулем были проблемы установился v 2.0.2 и выдовал ошибку
+       // сменил на ^1.0.0
+       // new CleanWebpackPlugin([
+       //    './dist/*.*'
+       //])
+       
+
+
+        new CleanWebpackPlugin(),
+
     ]
 }
