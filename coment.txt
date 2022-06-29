@@ -7,3 +7,6 @@ webpack-cli — интерфейс командной строки для веб
 создали webpack.config.js
 
 запускаем для проверки npm run webpack
+
+3. Устанавливаем npm i -D html-webpack-plugin
+плугин нужен для связывания html с js
