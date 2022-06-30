@@ -68,3 +68,21 @@
         // postcss-loader -загружает плагины для обработки
 
 11. Устанавливаем npm install -D pug pug-loader
+
+Заметка.
+                        // В предыдущей сборки этот код в js файле не работал, выдавал ошибку 
+
+                        const getRecource = async(url)=>{
+                        const res = await fetch(url);
+                        const body = await res.json();
+                        return body;
+                        };
+
+                        getRecource('https://swapi.dev/api/people/1/')
+                        .then((body)=>{
+                                console.log(body);
+                        });
+                        // Устанвливал babel-polyfill ,в этой версии код работает.
+                        // entry: {
+                        //     app: ['babel-polyfill', './src/index.js']
+                        // },
