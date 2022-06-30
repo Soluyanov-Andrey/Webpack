@@ -44,4 +44,9 @@
         //, но, на всякий случай оставил style-loader
 
 7.Устанавливаем npm install --save-dev webpack-merge
-        //webpack-merge нужен для разделения на prod и dev
+        // webpack-merge нужен для разделения на prod и dev
+        // добавлен webpack.common.js
+        // добавлен webpack.dev.js
+        // добавлен webpack.prod.js
+
+
