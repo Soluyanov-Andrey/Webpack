@@ -15,6 +15,7 @@ module.exports = {
 
     module: {
         rules: [
+            
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -25,8 +26,12 @@ module.exports = {
                     }
                 }
              },
+             {
+                test: /\.pug$/,
+                loader: '@webdiscus/pug-loader'
+            },
 
-            
+
             {
                 //
                 test: /\.scss$/,
@@ -36,13 +41,13 @@ module.exports = {
                         loader:'css-loader',
                         options: {sourceMap: true}
                     },
-
+                // Закоментировав можно убрать зжатия css
                     {
                         loader: 'postcss-loader',
                         options: {sourceMap: true}
             
                     },
-
+                //
                     {
                         loader:'sass-loader',
                         options: {
@@ -58,7 +63,7 @@ module.exports = {
       
         new HtmlWebpackPlugin(
             {
-                template: './src/index.html'
+                template: './src/index.pug'
             }
         ),
         new MiniCssExtractPlugin({
