@@ -43,4 +43,5 @@
         // используется только sass-loader и sass
         //, но, на всякий случай оставил style-loader
 
-
+7.Устанавливаем npm install --save-dev webpack-merge
+        //webpack-merge нужен для разделения на prod и dev
