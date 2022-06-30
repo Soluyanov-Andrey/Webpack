@@ -17,7 +17,7 @@ module.exports = merge(common, {
             directory: path.join(__dirname, './src'),
           },
           compress: true,
-          port: 9030,
+          port: 9040,
           //выводим ошибки в браузер
         
     }

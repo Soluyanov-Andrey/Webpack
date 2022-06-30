@@ -43,17 +43,20 @@
         // используется только sass-loader и sass
         //, но, на всякий случай оставил style-loader
 
-7.Устанавливаем npm install -D  webpack-merge
+7. Устанавливаем npm install -D  webpack-merge
         // webpack-merge нужен для разделения на prod и dev
         // добавлен webpack.common.js
         // добавлен webpack.dev.js
         // добавлен webpack.prod.js
 
-8.Устанавливаем npm install -D webpack-dev-server
+8. Устанавливаем npm install -D webpack-dev-server
         // и разделяем на три типа запуска dev, prod, server server включает 
         // dev-server в настройках package.json и работает в режиме ожидания обновлений файлов
         // dev выгружает все файлы проекта несжатыми в папку dist
         // prod выгружает все файлы проекта убирая все лишнее, в папку dist
-        
 
+9. Устанавливаем npm install -D @babel/core @babel/preset-env babel-loader
+        // babel-loader — настройка Webpack для работы с Babel.
+        // @babel/preset-env — создание кода, подходящего для старых браузеров.
+        // @babel/core — транспиляция JSX в JS.
 
