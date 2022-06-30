@@ -32,15 +32,30 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'sass-loader'
+                    {
+                        loader:'css-loader',
+                        options: {sourceMap: true}
+                    },
+
+                    {
+                        loader: 'postcss-loader',
+                        options: {sourceMap: true}
+            
+                    },
+
+                    {
+                        loader:'sass-loader',
+                        options: {
+                            sourceMap: true}
+
+                    }
                 ],
             },
         ],
     },
 
     plugins: [
-        
+      
         new HtmlWebpackPlugin(
             {
                 template: './src/index.html'

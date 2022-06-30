@@ -10,3 +10,8 @@ $margin: 16px;
   margin: calc($margin / 2);
   border-color: $blue;
 }
+
+.column {
+  display: flex;
+  flex-direction: column;
+}

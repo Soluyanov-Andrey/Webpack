@@ -60,3 +60,9 @@
         // @babel/preset-env — создание кода, подходящего для старых браузеров.
         // @babel/core — транспиляция JSX в JS.
 
+10. Устанавливаем npm install -D autoprefixer css-mqpacker cssnano postcss-loader
+        
+        // autoprefixer - проставляет префиксы стилям
+        // css-mqpacker - сжимает медиа запросы
+        // cssnano - максимально минифицирует исходные стили
+        // postcss-loader -загружает плагины для обработки
